@@ -1,36 +1,171 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Event Master
+
+**Event Master** is a full-stack web application designed to help users manage events, create accounts, and log in seamlessly. This app integrates modern technologies to deliver a clean, responsive, and scalable solution for event management.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Features
+
+- User Authentication (Sign Up, Sign In)
+- Social Sign-In (Google, Facebook, GitHub)
+- Clean and responsive design using Tailwind CSS
+- Built using Next.js (App Router)
+- Form validation powered by Zod and react-hook-form
+- Event management features (Upcoming)
+- Dark mode support (Upcoming)
+
+## Technologies Used
+
+- **Next.js** (13+) – React framework for server-side rendering and file-based routing
+- **React** – Component-based UI library
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **Zod** – TypeScript-first schema validation for form validation
+- **React Hook Form** – Form handling and validation
+- **Firebase** (Optional) – Authentication and database management (for scaling)
+- **Icons** – React-icons (Google, GitHub, Facebook)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+To run this project locally, ensure you have the following installed on your machine:
+
+- **Node.js** (v14+)
+- **npm** or **yarn**
+- **Git** for version control
+- **A GitHub Account** for OAuth (if using social sign-in)
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/vishomallaoli/event-master.git
+   cd event-master
+   ```
+
+2. **Install dependencies**:
+
+   Using npm:
+   ```bash
+   npm install
+   ```
+
+   Using yarn:
+   ```bash
+   yarn install
+   ```
+
+3. **Set up environment variables**:
+
+   Create a `.env.local` file in the root directory of your project to configure environment variables (e.g., for API keys like Google OAuth or Firebase configuration).
+
+   Example `.env.local`:
+   ```bash
+   NEXT_PUBLIC_GOOGLE_CLIENT_ID=<your-google-client-id>
+   NEXT_PUBLIC_FACEBOOK_CLIENT_ID=<your-facebook-client-id>
+   NEXT_PUBLIC_GITHUB_CLIENT_ID=<your-github-client-id>
+   ```
+
+4. **Start the development server**:
+
+   Using npm:
+   ```bash
+   npm run dev
+   ```
+
+   Using yarn:
+   ```bash
+   yarn dev
+   ```
+
+   The app should now be running at `http://localhost:3000`.
+
+## Usage
+
+### User Sign-In/Sign-Up
+
+- Users can create an account by signing up with their email and password.
+- Social sign-in options include Google, Facebook, and GitHub.
+
+### Event Management (Upcoming Features)
+
+- Users will be able to create, edit, and manage events.
+- Admins can view all events and track attendees.
+
+## Folder Structure
+
+Here’s an overview of the folder structure of the project:
+
+```
+event-master/
+├── app/
+│   ├── auth/
+│   │   ├── signin/
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── signup/
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   └── (more pages…)
+├── components/
+│   ├── ui/
+│   │   ├── button.tsx
+│   │   ├── form.tsx
+│   │   └── input.tsx
+├── public/
+├── styles/
+│   ├── globals.css
+├── .env.local
+├── tailwind.config.js
+├── tsconfig.json
+├── next.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `app/`: Contains all your pages, including `signin` and `signup` under the `auth` folder.
+- `components/`: Reusable UI components like buttons, forms, and inputs.
+- `styles/`: Contains your global and custom styles (e.g., Tailwind).
+- `public/`: Static assets like images, icons, etc.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature-name`).
+3. Make the necessary changes and commit them (`git commit -m "Added feature"`).
+4. Push the changes to your branch (`git push origin feature-name`).
+5. Open a pull request on GitHub.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
+If you have any questions or suggestions, feel free to contact me:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Visho Malla Oli**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub: [@vishomallaoli](https://github.com/vishomallaoli)
+- Email: [vishomallaoli1@gmail.com](mailto:vishomallaoli1@gmail.com)
+
+---
+
+### Additional Notes:
+1. **Optional Features**: If you plan to add more features like event creation or Firebase integration, you can mention those in the "Upcoming Features" section or add them as separate sections when implemented.
+2. **License**: Update the license section if you haven't decided on a license yet.
+
+This README will give users or collaborators a clear understanding of the project, how to set it up, and how they can contribute. Let me know if you'd like any other details added!
