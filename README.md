@@ -1,5 +1,5 @@
 # Event Master
-
+<p align="center"> <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React"/> <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase"/> <img src="https://img.shields.io/badge/Zod-3178C6?style=for-the-badge&logoColor=white" alt="Zod"/> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/> </p>
 **Event Master** is a full-stack web application designed to help users manage events, create accounts, and log in seamlessly. This app integrates modern technologies to deliver a clean, responsive, and scalable solution for event management.
 
 ## Table of Contents
